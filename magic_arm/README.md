@@ -3,7 +3,7 @@
 
 ## Quickstart
 This is a ROS compatible project. Add the magicarm folder to a ROS workspace and rebuild to start using it  
-The running roslaunch magicarm MagicArm.launch will launch the arm control and a ROSbridge connection for the web interface  
+Running roslaunch magicarm MagicArm.launch will launch the arm control and a ROSbridge connection for the web interface  
 
 
 ## Important files
