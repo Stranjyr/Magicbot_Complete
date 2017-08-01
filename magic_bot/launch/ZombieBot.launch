@@ -1,0 +1,10 @@
+<launch>
+	<node name="lidar" type="urg_node" pkg="urg_node" />
+	<node name="rosbridge" type="rosbridge_websocket" pkg="rosbridge_server">
+		<param name="port" value="9092"/>
+	</node>
+	<node name="magicbot" type="MagicBotRosWrapper.py" pkg="magicbot_revive">
+		<param name="bno_cal_file" value="$(find magicbot_revive)/config/calibration.json"/>
+	</node>
+	<node name="magic_arm" type="MagicArmRosWrapper.py" pkg="magicarm" output="screen"/>
+</launch>
